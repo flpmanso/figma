@@ -1,14 +1,20 @@
-:host {
-  display: block;
-  padding: 32px;
+.topo {
+  position: absolute;
+  width: 1120px;
+  height: 60px;
+  left: 240px;
+  top: 50px;
 }
 
-.header {
-  font-size: 60px;
-  font-weight: bold;
-  word-wrap: inherit;
-  word-break: inherit;
-  width: 60%;
+.logo {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 240px;
+  top: 77px;
+
+  background: #9C69E2;
+  border-radius: 20px;
 }
 
 .sideleft {
