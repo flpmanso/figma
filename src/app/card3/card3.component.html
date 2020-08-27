@@ -1,15 +1,27 @@
-<div gdAreas="header header | content  side  "
-     gdGap="5px"
-     gdRows="auto auto auto"
-     gdAreas.lt-md="header | side | content | footer"
-     gdRows.lt-md="auto auto auto auto"
-     style="min-height: 370px; margin: 2px; border-radius: 3em; background:{{card3.background}}">
-
-  <div gdArea="side">
-    <a class="header">{{card3.header}}</a>
-    <a class="sideRight">{{card3.text}}</a>
+<div class="container3">
+  <div class="titleContainer">
+    <div class="title">
+      <a >Features</a>
+    </div>
+    <div class=" subTitle">
+      <a>Some of the features and advantages that we provide for
+        those of you who store data in this Data Warehouse</a>
+    </div>
   </div>
-  <div gdArea="content" class="sideleft">
-    <img src="{{card3.img}}"/>
+
+  <div gdAreas="header header | content  side  "
+       gdGap="5px"
+       gdRows="auto auto auto"
+       gdAreas.lt-md="header | side | content | footer"
+       gdRows.lt-md="auto auto auto auto"
+       style="min-height: 370px; margin: 2px; border-radius: 3em; background:{{card3.background}}">
+
+    <div gdArea="side">
+      <a class="header">{{card3.header}}</a>
+      <a class="sideRight">{{card3.text}}</a>
+    </div>
+    <div gdArea="content" class="sideleft">
+      <img src="{{card3.img}}"/>
+    </div>
   </div>
 </div>

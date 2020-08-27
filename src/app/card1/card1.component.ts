@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Card1Component implements OnInit {
 
+  menus = [ 'Help', 'Features', 'Signup'];
+
   constructor() { }
 
   ngOnInit(): void {

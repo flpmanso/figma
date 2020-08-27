@@ -1,56 +1,39 @@
 <div class="container">
-
-
-
-  <div class="container">
-    <router-outlet></router-outlet>
-  </div>
-  <div
-    fxLayout="row wrap"
-    fxLayout.lt-sm="column"
-    fxLayoutGap="32px"
-    fxLayoutAlign="flex-start">
-    <ng-container>
-      <app-card1
-        fxFlex="0 1 calc(100% - 32px)"
-        fxFlex.lt-md="0 1 calc(100% - 32px)"
-        fxFlex.lt-sm="100%"
-      ></app-card1>
-    </ng-container>
-  </div>
-  <div
-    fxLayout="row wrap"
-    fxLayout.lt-sm="column"
-    fxLayoutGap="32px"
-    fxLayoutAlign="flex-start">
-    <ng-container>
-      <app-card2
-        fxFlex="0 1 calc(100% - 32px)"
-        fxFlex.lt-md="0 1 calc(100% - 32px)"
-        fxFlex.lt-sm="100%"
-      ></app-card2>
-    </ng-container>
-  </div>
-  <div fxLayoutAlign="center">
-    <a class="title">Features</a>
-  </div>
-  <div fxLayoutAlign="center" class="subTitle">
-    <a >Some of the features and advantages that we provide for
-      those of you who store data in this Data Warehouse</a>
-  </div>
-
-  <div
-    fxLayout="row wrap"
-    fxLayout.lt-sm="column"
-    >
-
-    <ng-container *ngFor="let card of cards">
-      <app-card3
-        fxFlex="0 1 calc(50% - 32px)"
-        fxFlex.lt-md="0 1 calc(100% - 32px)"
-        fxFlex.lt-sm="100%"
-      [card3]="card"
-      ></app-card3>
-    </ng-container>
-  </div>
+  <app-card1></app-card1>
 </div>
+<div class="container">
+  <app-card2></app-card2>
+</div>
+
+<div class="container">
+  <app-card3></app-card3>
+</div>
+<!--  <div-->
+<!--    fxLayout="row wrap"-->
+<!--    fxLayout.lt-sm="column"-->
+<!--    fxLayoutGap="32px"-->
+<!--    fxLayoutAlign="flex-start">-->
+<!--    <ng-container>-->
+<!--      <app-card2-->
+<!--        fxFlex="0 1 calc(100% - 32px)"-->
+<!--        fxFlex.lt-md="0 1 calc(100% - 32px)"-->
+<!--        fxFlex.lt-sm="100%"-->
+<!--      ></app-card2>-->
+<!--    </ng-container>-->
+<!--  </div>-->
+
+
+<!--  <div-->
+<!--    fxLayout="row wrap"-->
+<!--    fxLayout.lt-sm="column"-->
+<!--    >-->
+
+<!--    <ng-container *ngFor="let card of cards">-->
+<!--      <app-card3-->
+<!--        fxFlex="0 1 calc(50% - 32px)"-->
+<!--        fxFlex.lt-md="0 1 calc(100% - 32px)"-->
+<!--        fxFlex.lt-sm="100%"-->
+<!--      [card3]="card"-->
+<!--      ></app-card3>-->
+<!--    </ng-container>-->
+<!--  </div>-->

@@ -1,3 +1,10 @@
+.container3 {
+  position: absolute;
+  width: 1117px;
+  height: 560px;
+  top: 1613px;
+}
+
 .header {
   font-size: 30px;
   font-weight: bold;
@@ -15,3 +22,47 @@
   padding: 20px;
 }
 
+.titleContainer {
+  position: absolute;
+  width: 584px;
+  height: 160px;
+  margin-left: 267.29px;
+}
+
+.title {
+  position: absolute;
+  width: 405px;
+  height: 52px;
+  left: 89px;
+
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 130%;
+
+  align-items: center;
+  text-align: center;
+
+  color: #212353;
+}
+
+.subTitle {
+  position: absolute;
+  width: 584px;
+  height: 58px;
+  top: 50px;
+
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  /* or 29px */
+
+  text-align: center;
+
+  /* 1 */
+
+  color: #4B5D68;
+}

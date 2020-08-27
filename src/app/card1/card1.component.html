@@ -1,37 +1,36 @@
-<header>
-  <div class="topo">
-    <div>
-    <img src="assets/layout/images/Rectangle%2032.png"/>
-    <img src="assets/layout/images/Rectangle%2033.png"/>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#" routerLink="/about">About</a></li>
-        <li><a href="#" routerLink="/Help">Help</a></li>
-        <li><a href="#" routerLink="/Features">Features</a></li>
-        <li><a href="#" routerLink="/Signup">Signup</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+<nav class="navbar">
+    <a>
+    <img style="margin-top: 15px" src="assets/layout/images/Rectangle%2032.png"/>
+    </a>
+    <a>
+    <img style="margin-left: 29px" src="assets/layout/images/Rectangle%2033.png"/>
+    </a>
 
-<div
+    <ul>
+      <li style="font-weight: 800"><a>About</a></li>
+      <li *ngFor=" let menu of menus">
+        <a>{{menu}}</a></li>
+    </ul>
+</nav>
+
+
+<div class="headline"
       gdAreas="header header | side content | footer footer"
      gdGap="16px"
      gdRows="auto auto auto"
      gdAreas.lt-md="header | side | content | footer"
      gdRows.lt-md="auto auto auto auto">
-  <div gdArea="header" class="header">
+  <div gdArea="header" class="title">
     Save your data storage here
   </div>
-  <div gdArea="side" class="sideleft">
+  <div gdArea="side" class="text">
     Data warehouse is a data storage area that has been tested for security, so you can store your data here
     safely but not be afraid of being stolen by other
   </div>
-  <div gdArea="content">
+  <div gdArea="content" class="imagem">
     <img src="assets/layout/images/card1.png"/>
   </div>
-  <div gdArea="footer">
-<a class="btn rounded">Learn More</a>
+  <div gdArea="footer" class="botao">
+    <p class="textbotao">Learn More</p>
   </div>
 </div>
