@@ -9,21 +9,28 @@
     </div>
   </div>
 
-  <div class="littleContainer"
-    gdAreas="header header | content  side  "
+  <div *ngFor="let card of cards"
+    class="{{card.littleContainer}}"
+       fxLayoutGap="20px"
+    gdAreas="header header | content  side | footer footer  "
        gdGap="5px"
        gdRows="auto auto auto"
        gdAreas.lt-md="header | side | content | footer"
        gdRows.lt-md="auto auto auto auto"
-       *ngFor="let card of cards">
+       >
 
     <a class="titleLittleContainer">{{card.header}}</a>
     <a class="textLittleContainer">{{card.text}}</a>
-    <img class="elipse" src="assets/layout/images/elipseCard31.png">
-    <img class="retangulo" src="assets/layout/images/retanguloCard31.png">
-    <img class="vector" src="assets/layout/images/Vector%2056.png">
+    <img class="{{card.elipse}}" *ngIf="card.elipse" src="assets/layout/images/elipseCard31.png">
+    <img class="retangulo" src="{{card.retangulo}}">
+    <img class="{{card.vector}}" *ngIf="card.vector" src="assets/layout/images/Vector%2056.png">
+    <img class="{{card.elipseG}}" *ngIf="card.elipseG" src="assets/layout/images/EllipseG.png">
     <div gdArea="content"  >
       <img class="imagemContainer" src="{{card.img}}"/>
     </div>
+    <div gdArea="footer" class="botao3">
+      <p class="textbotao">Learn More</p>
+    </div>
   </div>
+
 </div>

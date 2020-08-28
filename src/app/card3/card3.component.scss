@@ -1,7 +1,7 @@
 .container3 {
   position: absolute;
   width: 1117px;
-  height: 560px;
+  height: 1200px;
   top: 1613px;
 }
 
@@ -64,11 +64,12 @@
   color: #4B5D68;
 }
 
-.littleContainer {
+.littleContainer1 {
   position: absolute;
   width: 531.29px;
   height: 388px;
   top: 150px;
+
 }
 
 .imagemContainer {
@@ -132,7 +133,96 @@
   position: absolute;
   width: 203.82px;
   height: 118.6px;
-  left: 290px;
-  top: 227.99px;
+  left: 310px;
+  top: 60px;
   z-index: 2;
+  transform: rotate(20deg);
+}
+
+.vector2 {
+  position: absolute;
+  width: 203.82px;
+  height: 118.6px;
+  left: 290px;
+  top: 230px;
+  z-index: 2;
+  transform: rotate(180deg);
+}
+.vector4 {
+  position: absolute;
+  width: 323px;
+  height: 188.6px;
+  left: 120px;
+  top: 60px;
+  z-index: 1;
+  transform: rotate(130deg);
+}
+
+.elipseG3 {
+  position: absolute;
+  width: 68.05px;
+  height: 40.21px;
+  left: 430px;
+  top: 60.83px;
+  z-index: 1;
+}
+
+.elipseG4 {
+  position: absolute;
+  width: 68.05px;
+  height: 40.21px;
+  left: 430px;
+  top: 320px;
+  z-index: 1;
+  transform: rotate(45deg);
+
+}
+
+.botao3 {
+  position: absolute;
+  width: 170px;
+  height: 60px;
+
+  p {
+    position: absolute;
+    width: 96px;
+    height: 29px;
+    left: 260.29px;
+
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: black;
+  }
+}
+
+.littleContainer2 {
+  position: absolute;
+  width: 531.29px;
+  height: 388px;
+  left: 573px;
+  top: 150px;
+
+}
+
+.littleContainer3 {
+  position: absolute;
+  width: 531.29px;
+  height: 388px;
+  top: 565px;
+}
+
+.littleContainer4 {
+  position: absolute;
+  width: 531.29px;
+  height: 388px;
+  left: 573px;
+  top: 565px;
 }
