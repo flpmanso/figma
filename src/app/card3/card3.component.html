@@ -9,19 +9,21 @@
     </div>
   </div>
 
-  <div gdAreas="header header | content  side  "
+  <div class="littleContainer"
+    gdAreas="header header | content  side  "
        gdGap="5px"
        gdRows="auto auto auto"
        gdAreas.lt-md="header | side | content | footer"
        gdRows.lt-md="auto auto auto auto"
-       style="min-height: 370px; margin: 2px; border-radius: 3em; background:{{card3.background}}">
+       *ngFor="let card of cards">
 
-    <div gdArea="side">
-      <a class="header">{{card3.header}}</a>
-      <a class="sideRight">{{card3.text}}</a>
-    </div>
-    <div gdArea="content" class="sideleft">
-      <img src="{{card3.img}}"/>
+    <a class="titleLittleContainer">{{card.header}}</a>
+    <a class="textLittleContainer">{{card.text}}</a>
+    <img class="elipse" src="assets/layout/images/elipseCard31.png">
+    <img class="retangulo" src="assets/layout/images/retanguloCard31.png">
+    <img class="vector" src="assets/layout/images/Vector%2056.png">
+    <div gdArea="content"  >
+      <img class="imagemContainer" src="{{card.img}}"/>
     </div>
   </div>
 </div>
